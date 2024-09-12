@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tela de Login -->
+    <div id="login-screen">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+            <br>
+            <button type="submit">Login</button>
+            <p id="login-status"></p>
+        </form>
+    </div>
+
+    <!-- Tela do Jogo da Forca -->
+    <div id="game-screen" style="display: none;">
+        <header>
+            <h1>Jogo da Forca</h1>
+        </header>
+        <main>
+            <article class="content-img">
+                <img id="game-img" src="img1.png" width="250px" alt="Forca">
+            </article>
+            <article class="content">
+                <div class="guess-word"></div>
+                <div class="clue"></div>
+                <div class="btns"></div>
+                <button class="new">Novo Jogo</button>
+            </article>
+        </main>
+    </div>
+
+    <script src="words.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="login.js"></script>
+</body>
+</html>
